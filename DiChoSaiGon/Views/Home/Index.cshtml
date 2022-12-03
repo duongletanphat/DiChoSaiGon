@@ -170,12 +170,12 @@
                     }
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="all-items" role="tabpanel" aria-labelledby="all-items-tab">
+                    <div class="tab-pane fade show active img-full" id="all-items" role="tabpanel" aria-labelledby="all-items-tab">
                         @await Html.PartialAsync("_ListProductPartialView", allProduct)
                     </div>
                     @foreach (var item in Model.Products)
                     {
-                        <div class="tab-pane fade" id="@item.category.Alias" role="tabpanel" aria-labelledby="fresh-fruits-tab">
+                        <div class="tab-pane fade img-full" id="@item.category.Alias" role="tabpanel" aria-labelledby="fresh-fruits-tab">
                             @await Html.PartialAsync("_ListProductPartialView", item.lsProducts)
                         </div>
                     }

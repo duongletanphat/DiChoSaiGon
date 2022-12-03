@@ -116,18 +116,9 @@
                                     <div id="accordion">
                                         <div class="card">
                                             <div class="card-header" id="#payment-1">
-                                                <h5 class="panel-title">
-                                                    <a href="javascript:void(0)" class="" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
-                                                        Thanh toán khi giao hàng (COD)
-                                                    </a>
-                                                </h5>
-                                            </div>
-                                            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-                                                <div class="card-body">
-                                                    <p>
-                                                        Khách hàng sẽ thanh toán khi nhận hàng
-                                                    </p>
-                                                </div>
+                                                <a asp-action="PaypalCheckout">
+                                                    <img src="~/images/checkout/paypal_checkout.gif" height="100"/>                                                    
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="card">
